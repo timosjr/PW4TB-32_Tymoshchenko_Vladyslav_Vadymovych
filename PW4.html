@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Веб калькулятор</title>
+    <script src="PW4.js"></script>
+    <link rel="stylesheet" href="PW4_style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Калькулятор 1: вибір кабелів для живлення підстанції напругою 10 кВ</h1>
+            <label for="kIk">Струм КЗ, кА:</label>
+            <input type="number" id="kIk">
+            <label for="ktPhi">Фіктивний час вимикання струму КЗ, с:</label>
+            <input type="number" id="ktPhi">
+            <label for="kSm">Розрахункове навантаження, кВ * A:</label>
+            <input type="number" id="kSm">
+            <input type="button" value="Розрахувати" onclick="web_calculator.calculator1()">
+        </div>
+        <div class="results" id="result1"></div>
+    </div>
+
+    <div class="container">
+        <div class="calculator">
+            <h1>Калькулятор 2: визначення струмів КЗ на шинах 10 кВ ГПП</h1>
+            <label for="kKZPower">Потужність КЗ, МВ*А:</label>
+            <input type="number" id="kKZPower">
+            <input type="button" value="Розрахувати" onclick="web_calculator.calculator2()">
+        </div>
+        <div class="results" id="result2"></div>
+    </div>
+
+    <div class="container">
+        <div class="calculator">
+            <h1>Калькулятор 3: </h1>
+            <label for="kUvn">Максимальна напруга короткого замикання:</label>
+            <input type="number" id="kUvn">
+            <label for="kUkmax">Номінальна напруга вольтажу:</label>
+            <input type="number" id="kUkmax">
+            <label for="kSnomt">Номінальна потужність трансформатора:</label>
+            <input type="number" id="kSnomt">
+            <label for="kRsh">Активний опір статора, Ом:</label>
+            <input type="number" id="kRsh">
+            <label for="kXcn">Реактивний опір статора, Ом:</label>
+            <input type="number" id="kXcn">
+            <label for="kRshMin">Мінімальний активний опір статора, Ом:</label>
+            <input type="number" id="kRshMin">
+            <label for="kXcMin">Мінімальний реактивний опір статора, Ом:</label>
+            <input type="number" id="kXcMin">
+            <input type="button" value="Розрахувати" onclick="web_calculator.calculator3()">
+        </div>
+        <div class="results" id="result3"></div>
+    </div>
+
+</body>
+</html>
